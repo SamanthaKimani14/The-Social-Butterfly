@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+
+
+    <title>Home</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light text-secondary text-bolder sticky-header" style="background-color: lavenderblush; height: 80px; position: sticky">
+    <a class="navbar-brand fs-3" style=" font-weight: bolder; color: purple"  href="{% url 'home' %} ">The Social Butterfly</a>
+    <div class="collapse navbar-collapse container-fluid">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item"><a class="nav-link btn btn-outline-danger" style="font-weight: bold" href="{% url 'event_list' %}">Post Events</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-outline-danger" style="font-weight: bold" href="{% url 'entertainment' %}">Entertainment</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-outline-danger" style="font-weight: bold" href="{% url 'corporate' %}">Corporate</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-outline-danger" style="font-weight: bold" href="{% url 'peer' %}">Peer</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-outline-danger" style="font-weight: bold" href="{% url 'children' %}">Children</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-outline-danger" style="font-weight: bold" href="{% url 'teen' %}">Teen</a></li>
+            <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn " style="font-weight: bold; color: white; background-color: rebeccapurple" type="button">Search</button>
+      </form>
+            <li class="nav-item"><a class="nav-link btn btn-outline-danger" style="font-weight: bold" href="{% url 'contact' %}">Get Intouch With Us</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-danger" style="font-weight: bold" href="{% url 'index' %}">Log Out</a></li>
+
+        </ul>
+    </div>
+</nav>
+
+<br><br>
+    {% block content %}
+
+        <h1 class="text-center" style="color: purple; font-weight: bolder">The Social Butterfly</h1>
+        <br><br>
+        <div class="container-fluid text-center" style="background-color: lavenderblush; padding-top: 30px; padding-bottom: 20px; font-weight: bolder"><p>Welcome to our vibrant platform, where you can effortlessly explore a diverse array of events tailored to your passions and interests. Whether you're an aspiring artist eager to unleash your creativity in painting classes, a fitness enthusiast ready to join an energetic running club, or someone seeking joy and connection through improv acting and comedy, we have something for everyone. Our curated selection of niche events includes invigorating hiking groups that celebrate the great outdoors and engaging workshops designed for personal growth. Dive into a world of local activities that not only entertain but also enrich your life and foster connections with like-minded individuals.</p>
+            <p>Join us and embrace the opportunity to learn, laugh, and thrive in a community that celebrates your unique passions. Be a social butterfly!</p></div>
+
+
+
+<div class="container mt-5 text-center">
+  <div class="row">
+    <div class="col-sm-4">
+        <img src="{% static 'assets/image/566w-CNx4jinX7nQ.webp' %}" alt="" class="w-75 h-65">
+      <h3 style="color:purple; font-weight: bolder">Entertainment Events</h3>
+      <p>Entertainment events focus on unique, niche experiences that captivate and engage....</p>
+      <p>From intimate concerts and comedy nights to specialized theater productions and themed festivals, these gatherings provide immersive opportunities for attendees to enjoy and connect with their passions in a vibrant atmosphere....</p>
+        <br>
+        <div class="d-grid">
+            <a class="btn" style="background-color: rebeccapurple; color: white" href="{% url 'entertainment' %}">More</a>
+        </div>
+
+    </div>
+
+    <div class="col-sm-4 text-center">
+         <img src="{% static 'assets/image/img_1.png' %}" alt="" class="w-75 h-65">
+      <h3 style="color:purple; font-weight: bolder">Corporate Events</h3>
+      <p>Corporate events emphasize personal connections and tailored experiences within the business realm...</p>
+      <p>These include unique team-building retreats, creative workshops, and networking events that feature engaging activities designed to foster collaboration and strengthen relationships among colleagues in a relaxed setting...</p>
+        <div class="d-grid">
+            <a class="btn" style="background-color: rebeccapurple; color: white" href="{% url 'corporate' %}">More</a>
+        </div>
+    </div>
+
+    <div class="col-sm-4 text-center">
+         <img src="{% static 'assets/image/img_2.png' %}" alt="" class="w-75 h-65">
+      <h3 style="color:purple; font-weight: bolder">Peer Events</h3>
+      <p>Peer events are crafted for individuals seeking meaningful connections with others who share similar interests...</p>
+      <p>These gatherings, such as niche hobby meetups, themed social nights, and collaborative projects, encourage participants to engage deeply with one another in a supportive environment...</p>
+        <div class="d-grid">
+             <a class="btn" style="background-color: rebeccapurple; color: white" href="{% url 'peer' %}">More</a>
+        </div>
+    </div>
+  </div>
+</div>
+        <br><br><br><br>
+        <div class="container mt-5 text-center">
+  <div class="row">
+    <div class="col-sm-4">
+        <img src="{% static 'assets/image/img_3.png' %}" alt="" class="w-75 h-70">
+      <h3 style="color:purple; font-weight: bolder" >Teen Events</h3>
+      <p>Teen events focus on providing personalized experiences that resonate with young audiences...</p>
+      <p>Activities like creative workshops, themed hangouts, and interactive game nights are designed to foster friendships and allow teens to explore their interests in a safe and engaging atmosphere...</p>
+        <br>
+        <div class="d-grid">
+             <a class="btn" style="background-color: rebeccapurple; color: white" href="{% url 'teen' %}">More</a>
+        </div>
+
+    </div>
+
+
+    <div class="col-sm-4 text-center" >
+         <img src="{% static 'assets/image/img_4.png' %}" alt="" class="w-75 h-65">
+      <h3 style="color:purple; font-weight: bolder">Children Events</h3>
+      <p>Children's events highlight unique and enriching experiences tailored for younger audiences...</p>
+      <p>From interactive storytelling sessions and hands-on arts and crafts to outdoor explorations, these activities prioritize safety while promoting creativity, learning, and social connections among children...</p>
+        <div class="d-grid">
+             <a class="btn" style="background-color: rebeccapurple; color: white" href="{% url 'children' %}">More</a>
+        </div>
+    </div>
+
+    <div class="col-sm-4 text-center">
+         <img src="{% static 'assets/image/566w-bKbkrGBJkaQ.webp' %}" alt="" class="w-75 h-65">
+      <h3 style="color:purple; font-weight: bolder">More Events</h3>
+      <p>Explore More Events...</p>
+      <p>Find your tribe... <br><br>Be a Social Butterfly...</p>
+        <div class="d-grid">
+            <br><br><br>
+             <a class="btn" style="background-color: rebeccapurple; color: white" href="{% url 'event_list' %}">More</a>
+        </div>
+    </div>
+  </div>
+</div>
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <div style="padding: 50px;background-color: lavenderblush">
+
+        <footer class="container-fluid text-center" >
+            <br><br><br><br>
+            <p style=" color: purple; font-weight: bolder; height: 70px " >THE SOCIAL BUTTERFLY @2024</p>
+        </footer>
+        </div>
+    {% endblock %}
+
+
+
+
+
+</body>
+</html>

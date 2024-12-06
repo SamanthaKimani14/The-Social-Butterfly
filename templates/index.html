@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <title>THE SOCIAL BUTTERFLY</title>
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    {% load static %}
+    <style>
+        h{
+
+            color: purple;
+            font-size: 50px;
+            font-weight: bolder;
+            text-align: center;
+
+        }
+        body{
+            background-image: url("{% static 'assets/image/Pink and Purple Illustrative Personal Logo.png' %}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: inherit;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light text-secondary text-bolder" style="background-color: lavenderblush; height: 70px ">
+    <a class="navbar-brand fs-10" style=" font-weight: bolder; color: purple"  href="{% url 'index' %} ">The Social Butterfly</a>
+    <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+
+            <li class="nav-item"><a class="nav-link btn btn-outline-danger" style="font-weight: bold" href="{% url 'register' %}">Register</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-outline-danger" style="font-weight: bold" href="{% url 'login' %}">Login</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-outline-danger" style="font-weight: bold" href="#about">About Us</a></li>
+        </ul>
+    </div>
+</nav>
+<br><br>
+<br><br>
+<br><br>
+
+
+    {% block content %}
+        <div class="container-fluid p-5 text-center" style="background-color: lavenderblush; color: rebeccapurple">
+        <h class="text-center">WELCOME TO THE SOCIAL BUTTERFLY</h>
+  <p style="font-weight: bolder">FIND YOUR TRIBE!</p>
+</div>
+
+
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <div id="about" class="container-fluid" style="background-color: lavenderblush ;height: 300px; padding: 50px">
+        <h1 class="text-center" style="color: purple; background-color: lavenderblush; font-weight: bolder">ABOUT US!</h1>
+        <p style="font-weight: bold"> At our website, we believe that everyone deserves to connect with their passions and interests through unique experiences. Whether you're an aspiring artist looking to explore your creativity in painting classes, a fitness enthusiast eager to join a vibrant running club, or someone seeking laughter and camaraderie in improv acting and comedy clubs, we have something for you. Our platform is dedicated to curating niche events that cater to diverse interests, from invigorating hiking groups that embrace the beauty of nature to engaging workshops that foster personal growth. Join us in discovering local activities that not only entertain but also enrich your life and connect you with like-minded individuals. Embrace the opportunity to learn, laugh, and grow in a community that celebrates your passions!</p>
+
+            <p class="text-center" style="font-weight: bold">Be A Social Butterfly!</p>
+
+        </div>
+
+        <br><br><br><br><br><br><br><br>
+
+        <div style="padding: 50px;background-color: lavenderblush">
+
+        <footer class="container-fluid text-center" >
+            <br><br><br><br>
+            <p style=" color: purple; font-weight: bolder; height: 70px " >THE SOCIAL BUTTERFLY @2024</p>
+        </footer>
+        </div>
+
+
+    {% endblock %}
+
+</body>
+</html>

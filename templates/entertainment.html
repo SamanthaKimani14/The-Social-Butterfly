@@ -1,0 +1,57 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+    <style>
+    body{
+        background-color: lavenderblush;
+    }
+    </style>
+    <h2 class="mb-4 text-center" style="font-weight: bolder; color: purple">Entertainment Events</h2>
+	<div class="container mt-5">
+
+        <p class="text-center" style="font-weight: bolder">Explore a vibrant array of entertainment events that offer something for everyone to enjoy. From intimate live music performances and hilarious comedy nights to engaging theater productions, these unique experiences are designed to captivate and inspire. Discover local festivals, immersive art shows, and interactive performances that not only provide a chance to unwind but also foster connections with fellow enthusiasts who share your passions. Browse through the curated listings to find events that resonate with you, and find your tribe in the dynamic arts and entertainment scene. Create unforgettable memories and connect with others who appreciate the joy of live entertainment!</p>
+        <br><br>
+        <table class="table table-bordered table-striped" style="background-color: lavenderblush">
+        <thead class="thead-dark" style="background-color: lavenderblush">
+            <tr>
+                <th scope="col">Event Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Date</th>
+                <th scope="col">Location</th>
+                <th scope="col">Poster</th>
+                <th scope="col">RSVP</th> <!-- RSVP column -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Music Festival</td>
+                <td>A fun-filled day of music and entertainment.</td>
+                <td>2024-10-15</td>
+                <td>Uhuru Park</td>
+                <td><img src="{% static 'assets/image/566w-wfwkJOLIrI8.webp' %}" alt="Music Festival Poster" class="img-fluid" style="max-width: 100px;"></td>
+                <td><a href="" class="btn" style="background-color: rebeccapurple; color: white">RSVP</a></td> <!-- RSVP button -->
+            </tr>
+            <tr>
+                <td>Art Exhibition</td>
+                <td>Explore the latest works from local artists.</td>
+                <td>2024-11-01</td>
+                <td>Art Gallery</td>
+                <td><img src="{% static 'assets/image/img_5.png' %}" alt="Art Exhibition Poster" class="img-fluid" style="max-width: 100px;"></td>
+                <td><a href="" class="btn" style="background-color: rebeccapurple; color: white">RSVP</a></td> <!-- RSVP button -->
+            </tr>
+            <tr>
+                <td>Comedy Club</td>
+                <td>Join our club just for fun and giggles.</td>
+                <td>2024-12-05</td>
+                <td>KICC</td>
+                <td><img src="{% static 'assets/image/img_6.png' %}" alt="Tech Conference Poster" class="img-fluid" style="max-width: 100px;"></td>
+                <td><a href="" class="btn" style="background-color: rebeccapurple; color: white">RSVP</a></td> <!-- RSVP button -->
+            </tr>
+            <!-- Add more events as needed -->
+        </tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+{% endblock %}

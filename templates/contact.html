@@ -1,0 +1,58 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+    <style>
+    body{
+        background-color: lavenderblush;
+
+    }
+    </style>
+
+     <h1 class="text-center" style="color: purple; font-weight: bolder">Get In Touch With Us Today!</h1>
+    <br>
+    <div class="container-fluid container-sm text-center" style="font-weight: bolder">
+    <p>If you have questions, feedback, or need assistance, we’re here to help! Our dedicated team is ready to assist you with inquiries about event submissions, partnerships, or general information. We value your input and strive to create a community where everyone can connect and thrive. Don’t hesitate to get in touch—we look forward to hearing from you!</p>
+    <p>You can also reach via +254 777 *** ***</p>
+    </div>
+    <br><br>
+    <div class="container-fluid mask d-flex align-items-center" style="padding-left: 550px">
+    <form method="POST">
+        {% csrf_token %}
+  <!-- Name input -->
+  <div data-mdb-input-init class="form-outline mb-4">
+    <input type="text" id="form4Example1" class="form-control" />
+    <label class="form-label" for="form4Example1" style="color: purple">Name</label>
+  </div>
+
+  <!-- Email input -->
+  <div data-mdb-input-init class="form-outline mb-4">
+    <input type="email" id="form4Example2" class="form-control" />
+    <label class="form-label" for="form4Example2" style="color: purple" >Email address</label>
+  </div>
+
+  <!-- Message input -->
+  <div data-mdb-input-init class="form-outline mb-4">
+    <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+    <label class="form-label" for="form4Example3" style="color: purple" >Message</label>
+  </div>
+
+  <!-- Checkbox -->
+  <div class="form-check d-flex justify-content-center mb-4">
+    <input
+      class="form-check-input me-2"
+      type="checkbox"
+      value=""
+      id="form4Example4"
+      checked
+    />
+    <label class="form-check-label" for="form4Example4" style="color: purple">
+      Send me a copy of this message
+    </label>
+  </div>
+
+  <!-- Submit button -->
+  <button data-mdb-ripple-init type="submit" class="btn btn-block mb-4" style="background-color: purple; color: white">Send</button>
+</form>
+
+	
+{% endblock %}

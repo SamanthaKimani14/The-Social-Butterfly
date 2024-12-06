@@ -1,0 +1,59 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+	<style>
+    body{
+        background-color: lavenderblush;
+    }
+    </style>
+    <h2 class="mb-4 text-center" style="font-weight: bolder; color: purple">Corporate Events</h2>
+	<div class="container mt-5">
+
+        <p class="text-center" style="font-weight: bolder">Corporate events focus on creating engaging experiences that enhance networking and team-building within professional settings.</p>
+        <p class="text-center" style="font-weight: bolder"> These gatherings can include unique retreats, workshops, and networking mixers designed to foster collaboration among colleagues. By incorporating interactive elements such as team challenges or creative brainstorming sessions, corporate events aim to strengthen relationships while providing a refreshing break from the usual office routine.</p>
+        <p class="text-center" style="font-weight: bolder"> Participants can connect with one another in a relaxed environment, making these events not only productive but also enjoyable as they build camaraderie and inspire innovation.</p>
+        <br><br>
+        <table class="table table-bordered table-striped" style="background-color: lavenderblush">
+        <thead class="thead-dark" style="background-color: lavenderblush">
+            <tr>
+                <th scope="col">Event Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Date</th>
+                <th scope="col">Location</th>
+                <th scope="col">Poster</th>
+                <th scope="col">RSVP</th> <!-- RSVP column -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Music Festival</td>
+                <td>A fun-filled day of music and entertainment.</td>
+                <td>2024-10-15</td>
+                <td>Uhuru Park</td>
+                <td><img src="{% static 'assets/image/566w-wfwkJOLIrI8.webp' %}" alt="Music Festival Poster" class="img-fluid" style="max-width: 100px;"></td>
+                <td><a href="" class="btn" style="background-color: rebeccapurple; color: white">RSVP</a></td> <!-- RSVP button -->
+            </tr>
+            <tr>
+                <td>Art Exhibition</td>
+                <td>Explore the latest works from local artists.</td>
+                <td>2024-11-01</td>
+                <td>Art Gallery</td>
+                <td><img src="{% static 'assets/image/img_5.png' %}" alt="Art Exhibition Poster" class="img-fluid" style="max-width: 100px;"></td>
+                <td><a href="" class="btn" style="background-color: rebeccapurple; color: white">RSVP</a></td> <!-- RSVP button -->
+            </tr>
+            <tr>
+                <td>Comedy Club</td>
+                <td>Join our club just for fun and giggles.</td>
+                <td>2024-12-05</td>
+                <td>KICC</td>
+                <td><img src="{% static 'assets/image/img_6.png' %}" alt="Tech Conference Poster" class="img-fluid" style="max-width: 100px;"></td>
+                <td><a href="" class="btn" style="background-color: rebeccapurple; color: white">RSVP</a></td> <!-- RSVP button -->
+            </tr>
+            <!-- Add more events as needed -->
+        </tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+{% endblock %}
