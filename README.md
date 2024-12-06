@@ -1,19 +1,23 @@
-Project Title
+Project Title:
 The Social Butterfly
-Description
+
+Description:
 The Social Butterfly is designed to connect individuals with niche events that align with their interests and passions. This platform allows users to explore a variety of events ranging from entertainment and corporate gatherings to peer and community activities for teens and children. By fostering connections among like-minded individuals, The Social Butterfly aims to enrich lives through unique experiences.
-Features
+
+Features:
 Event Categories: Explore diverse categories including Entertainment, Teen Events, Children’s Events, Peer Events, and Corporate Events.
 User-Friendly Interface: Navigate easily through a clean and intuitive design.
 Event Submission: Users can post their own events, allowing for community-driven content.
 Search Functionality: Find events quickly based on interests, location, or date.
 Responsive Design: Fully responsive layout for seamless access on any device.
-Technologies Used
+
+Technologies Used:
 Frontend: HTML, CSS, JavaScript, Bootstrap
 Backend: Django
 Database: PostgreSQL
 Version Control: Git
-Installation
+
+Installation:
 To set up The Social Butterfly locally, follow these steps:
 Clone the repository:
 bash
